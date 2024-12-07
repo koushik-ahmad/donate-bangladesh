@@ -3,7 +3,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
 
-    console.log("donation click");
+    // console.log("donation click");
     showSectionById("btn-donation");
   });
 
@@ -12,6 +12,6 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
 
-    console.log("history click");
+    // console.log("history click");
     showSectionById("btn-history");
   });

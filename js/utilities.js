@@ -6,3 +6,5 @@ function showSectionById(id) {
   // show section
   document.getElementById(id).classList.remove("hidden");
 }
+
+

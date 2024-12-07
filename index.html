@@ -11,36 +11,39 @@
 
 <body>
     <!-- header section  -->
-    <header class="bg-yellow-50 px-4 py-5">
-        <div class="container mx-auto navbar">
-            <div class="navbar-start">
-                <a href="/blog.html" class="btn text-lg bg-lime-400">Blog</a>
-            </div>
-            <div class="navbar-center lg:flex">
-                <ul class="flex items-center gap-4">
-                    <img src="/assets/logo.png" alt="">
-                    <p class="text-lg font-semibold hidden sm:flex">Donate Bangladesh</p>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <img class="mr-2" src="/assets/coin.png" alt="">
-                <div class="flex gap-1 font-semibold text-lg">
-                    <p>5500</p>
-                    <p>BDT</p>
+    <header class="sticky top-0">
+        <div class="bg-yellow-50 px-4 py-4">
+            <div class="container mx-auto navbar">
+                <div class="navbar-start">
+                    <a href="/blog.html" class="btn text-lg bg-lime-400">Blog</a>
+                </div>
+                <div class="navbar-center lg:flex">
+                    <ul class="flex items-center gap-4">
+                        <img src="/assets/logo.png" alt="">
+                        <p class="text-lg font-semibold hidden sm:flex">Donate Bangladesh</p>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <img class="mr-2" src="/assets/coin.png" alt="">
+                    <div class="flex gap-1 font-semibold text-lg">
+                        <p id="main-balance">5500</p>
+                        <p>BDT</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- main section  -->
-    <main class="container mx-auto">
+
         <!-- user action button -->
-        <div class="flex justify-center gap-4 py-7">
+        <div class="flex justify-center gap-4 py-5 bg-zinc-100">
             <button id="show-btn-donation" class="btn bg-lime-400">Donation</button>
             <button id="show-btn-history" class="btn bg-lime-400">History</button>
         </div>
+    </header>
 
+    <!-- main section  -->
+    <main class="container mx-auto">
         <!-- donation start here  -->
-        <div id="btn-donation" class="">
+        <div id="btn-donation" class="mt-10">
             <!-- card 1  -->
             <div class="px-6 mb-10">
                 <div class="border-2 rounded-lg">
@@ -53,7 +56,7 @@
                             <div class="mt-5">
                                 <div class="flex w-40 p-2 rounded-lg bg-gray-100 gap-1 font-semibold text-lg">
                                     <img class="mx-2" src="/assets/coin.png" alt="">
-                                    <p>0</p>
+                                    <p id="donation-balance-1">0</p>
                                     <p>BDT</p>
                                 </div>
                             </div>
@@ -70,10 +73,10 @@
                                 in need.
                             </p>
                             <div class="py-5 mt-5">
-                                <input class="w-full input-md border-2 rounded-lg my-1" type="text"
-                                    placeholder="Write Donation Amount">
+                                <input id="donation-input-1" class="w-full input-md border-2 rounded-lg my-1"
+                                    type="text" placeholder="Write Donation Amount">
                             </div>
-                            <a class="flex btn text-lg bg-lime-400">Donate Now</a>
+                            <a id="donation-btn-1" class="flex btn text-lg bg-lime-400">Donate Now</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +93,7 @@
                             <div class="mt-5">
                                 <div class="flex w-40 p-2 rounded-lg bg-gray-100 gap-1 font-semibold text-lg">
                                     <img class="mx-2" src="/assets/coin.png" alt="">
-                                    <p>600</p>
+                                    <p id="donation-balance-2">600</p>
                                     <p>BDT</p>
                                 </div>
                             </div>
@@ -109,10 +112,10 @@
                                 assist those in urgent need.
                             </p>
                             <div class="py-5 mt-5">
-                                <input class="w-full input-md border-2 rounded-lg my-1" type="text"
-                                    placeholder="Write Donation Amount">
+                                <input id="donation-input-2" class="w-full input-md border-2 rounded-lg my-1"
+                                    type="text" placeholder="Write Donation Amount">
                             </div>
-                            <a class="flex btn text-lg bg-lime-400">Donate Now</a>
+                            <a id="donation-btn-2" class="flex btn text-lg bg-lime-400">Donate Now</a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +132,7 @@
                             <div class="mt-5">
                                 <div class="flex w-40 p-2 rounded-lg bg-gray-100 gap-1 font-semibold text-lg">
                                     <img class="mx-2" src="/assets/coin.png" alt="">
-                                    <p>2400</p>
+                                    <p id="donation-balance-3">2400</p>
                                     <p>BDT</p>
                                 </div>
                             </div>
@@ -148,10 +151,10 @@
                                 donation to support these brave individuals in their time of need.
                             </p>
                             <div class="py-5 mt-5">
-                                <input class="w-full input-md border-2 rounded-lg my-1" type="text"
-                                    placeholder="Write Donation Amount">
+                                <input id="donation-input-3" class="w-full input-md border-2 rounded-lg my-1"
+                                    type="text" placeholder="Write Donation Amount">
                             </div>
-                            <a class="flex btn text-lg bg-lime-400">Donate Now</a>
+                            <a id="donation-btn-3" class="flex btn text-lg bg-lime-400">Donate Now</a>
                         </div>
                     </div>
                 </div>
