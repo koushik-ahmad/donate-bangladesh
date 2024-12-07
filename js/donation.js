@@ -7,6 +7,10 @@ document
     const donationBalance = getTextFieldValueById("donation-balance-1");
     const mainBalance = getTextFieldValueById("main-balance");
 
+    const donationTitle = document.getElementById("donation-title-1").innerText;
+
+    const currentDate = new Date();
+
     if (isNaN(inputValue)) {
       alert("Invalid donation amount!");
       return;
@@ -29,6 +33,19 @@ document
     // main balance
     const newMainBalance = mainBalance - inputValue;
     document.getElementById("main-balance").innerText = newMainBalance;
+
+    // donation history
+    const div = document.createElement("div");
+    div.innerHTML = `
+       <div class="border-2 rounded-lg p-5 mb-5">
+         <h3 class="font-semibold text-xl pb-2">${inputValue} Taka is ${donationTitle}</h3>
+         <p>Date : ${currentDate}</p>
+       </div>
+    `;
+
+    document.getElementById("donation-history").appendChild(div);
+
+    alert("donation successfully!!!");
   });
 
 document
@@ -39,6 +56,10 @@ document
     const inputValue = getInputFieldValueById("donation-input-2");
     const donationBalance = getTextFieldValueById("donation-balance-2");
     const mainBalance = getTextFieldValueById("main-balance");
+
+    const donationTitle = document.getElementById("donation-title-2").innerText;
+
+    const currentDate = new Date();
 
     if (isNaN(inputValue)) {
       alert("Invalid donation amount!");
@@ -62,6 +83,19 @@ document
     // main balance
     const newMainBalance = mainBalance - inputValue;
     document.getElementById("main-balance").innerText = newMainBalance;
+
+    // donation history
+    const div = document.createElement("div");
+    div.innerHTML = `
+       <div class="border-2 rounded-lg p-5 mb-5">
+         <h3 class="font-semibold text-xl pb-2">${inputValue} Taka is ${donationTitle}</h3>
+         <p>Date : ${currentDate}</p>
+       </div>
+    `;
+
+    document.getElementById("donation-history").appendChild(div);
+
+    alert("donation successfully!!!");
   });
 
 document
@@ -72,6 +106,10 @@ document
     const inputValue = getInputFieldValueById("donation-input-3");
     const donationBalance = getTextFieldValueById("donation-balance-3");
     const mainBalance = getTextFieldValueById("main-balance");
+
+    const donationTitle = document.getElementById("donation-title-3").innerText;
+
+    const currentDate = new Date();
 
     if (isNaN(inputValue)) {
       alert("Invalid donation amount!");
@@ -95,4 +133,17 @@ document
     // main balance
     const newMainBalance = mainBalance - inputValue;
     document.getElementById("main-balance").innerText = newMainBalance;
+
+    // donation history
+    const div = document.createElement("div");
+    div.innerHTML = `
+       <div class="border-2 rounded-lg p-5 mb-5">
+         <h3 class="font-semibold text-xl pb-2">${inputValue} Taka is ${donationTitle}</h3>
+         <p>Date : ${currentDate}</p>
+       </div>
+    `;
+
+    document.getElementById("donation-history").appendChild(div);
+
+    alert("donation successfully!!!");
   });
