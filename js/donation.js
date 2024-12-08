@@ -17,12 +17,12 @@ document
     }
 
     if (inputValue <= 0) {
-      alert("Invalid donation amount!!");
+      alert("Please enter positive amount greater than 0");
       return;
     }
 
     if (inputValue > mainBalance) {
-      alert("Invalid donation amount!!!");
+      alert("Insufficient balance!!");
       return;
     }
 
@@ -45,7 +45,9 @@ document
 
     document.getElementById("donation-history").appendChild(div);
 
-    alert("donation successfully!!!");
+    // modal
+    const modal = document.getElementById("donation-modal");
+    modal.showModal();
   });
 
 document
@@ -67,12 +69,12 @@ document
     }
 
     if (inputValue <= 0) {
-      alert("Invalid donation amount!!");
+      alert("Please enter positive amount greater than 0");
       return;
     }
 
     if (inputValue > mainBalance) {
-      alert("Invalid donation amount!!!");
+      alert("Insufficient balance!!");
       return;
     }
 
@@ -95,7 +97,9 @@ document
 
     document.getElementById("donation-history").appendChild(div);
 
-    alert("donation successfully!!!");
+    // modal
+    const modal = document.getElementById("donation-modal");
+    modal.showModal();
   });
 
 document
@@ -117,12 +121,12 @@ document
     }
 
     if (inputValue <= 0) {
-      alert("Invalid donation amount!!");
+      alert("Please enter positive amount greater than 0");
       return;
     }
 
     if (inputValue > mainBalance) {
-      alert("Invalid donation amount!!!");
+      alert("Insufficient balance!!");
       return;
     }
 
@@ -145,5 +149,7 @@ document
 
     document.getElementById("donation-history").appendChild(div);
 
-    alert("donation successfully!!!");
+    // modal
+    const modal = document.getElementById("donation-modal");
+    modal.showModal();
   });
